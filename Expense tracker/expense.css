@@ -16,7 +16,7 @@ body{
 }
 
 .container{
-    width: 70%;
+    width: 100%;
     max-width: 1200px;
     background-color: #fff;
     padding: 2rem;
