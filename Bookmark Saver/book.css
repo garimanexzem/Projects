@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color:#f0f9f4 ;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1{
+    color: #2dcc6f;
+    margin-bottom: 20px;
+    /* font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.9px; */
+}
+
+.bookinfo{
+     /* display: grid;
+     grid-template-rows: 1fr 1fr; */
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     margin-bottom: 20px;
+}
+
+input{
+    padding: 10px;
+    border: 2px solid #e2e8f0;
+    transition: all 0.2s ease;
+}
+
+input:focus{
+    outline: none;
+    border-color:#ededed;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input:hover{
+    border-color: #cbd5e0;
+}
+
+button {
+  padding: 10px;
+  background-color:  #2dcc6f;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+    background-color: #27ae60;
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+#bookmark-list{
+    list-style: none;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 8px;
+    flex-grow: 1;
+}
+
+#bookmark-list li{
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bookmark-list li a {
+    text-decoration: none;
+    color: #2dcc6f;
+}
+
+#bookmark-list button {
+    background-color: #e84c3d;
+    padding: 5px 10px;  
+}
+
+#bookmark-list button:hover {
+    background-color: #c0392b;
+}
+
+#bookmark-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+#bookmark-list::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+#bookmark-list::-webkit-scrollbar-thumb{ 
+    background-color: #cbd5e0;
+    border-radius: 4px;}
+
+
+#bookmark-list::-webkit-scrollbar-thumb:hover {
+    background-color: #a0aec0;
+}
+
+
