@@ -1,0 +1,267 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: 'Manrope', sans-serif;
+    background: linear-gradient(135deg, #e78cea, #f4e3f3);
+   
+    min-height: 100vh;
+    margin-top: 15px; 
+}
+
+.main-container{
+    width:full;
+}
+
+.top-bar{
+    display: flex;
+    align-items:center;
+    margin-left: 60px;
+    justify-content: space-between;
+    justify-items: center;
+    background-color: #fff;
+    height: 80px;
+    width:90%;
+    border-radius: 20px;
+    padding-left: 15px;
+    box-shadow: 0 4px 16px rgba(237, 222, 222, 0.884);
+}
+
+.icon:hover {
+    transform: scale(1.07);
+    transition: transform 0.2s;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 16px;         /* Increased gap for bigger icon/text spacing */
+    padding: 24px;     /* Slightly larger padding */
+}
+
+.icon img, .icon svg {
+    width: 48px;       /* Increase icon size */
+    height: 48px;
+}
+
+.icon>h6{
+    font:bold;
+    font-size: large;
+}
+
+.bar{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.bar > a {
+    color: rgb(85, 79, 79);
+    padding: 10px 14px;
+    font-size: 15px;
+    text-decoration: none;         /* Remove underline */
+    border-radius: 10px;           /* Smooth corners, even on default */
+    transition: 
+        background-color 0.2s,
+        color 0.2s,
+        box-shadow 0.2s;
+    display: inline-block;         /* Ensures padding and radius apply nicely */
+}
+
+.bar > a:hover {
+    background-color: rgba(201, 204, 205, 0.25);
+    color: rgb(140, 54, 140);
+    box-shadow: 0 2px 8px rgba(156, 69, 159, 0.08);
+}
+
+.demo {
+    align-items: center;
+    border-radius: 12px;
+    background-color: #9c459f;
+    border: none;
+    height: 44px;
+    padding: 10px;
+    width: 110px;
+    margin: 40px;
+    color: #fff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.demo:hover {
+    background-color: #7a357a;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 12%;
+    letter-spacing: 0.1;
+    word-spacing: 0.1;
+}
+
+h1{
+    font:30px;
+    font-size: 70px;
+}
+
+.span {
+    font-weight: bold;
+    background: linear-gradient(45deg, #9c459f, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+p{
+    padding: 12px;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-demo{
+    align-items: center;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1px solid#7a357a;
+    height: 44px;
+    padding: 10px;
+    width: 110px;
+    margin: 10px;
+    color: #333;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-demo:hover {
+    transition: transform 0.2s;
+    background-color: #7a357a;
+    color:#fff;
+}
+
+.btn-agent{
+    align-items: center;
+    border-radius: 12px;
+    background-color: #7a357a;
+    border:none;
+    height: 44px;
+    padding: 10px;
+    width: 140px;
+    margin: 10px;
+    color: #fff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-agent:hover{
+    background-color: #541e54;
+}
+
+.icon-button.small {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    padding:5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+    background: linear-gradient(45deg, #9c459f, #ff69b4);
+    border: 1px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.icon-button.small img,
+.icon-button.small svg {
+  width: 16px;
+  height: 16px;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+}
+
+.icon-button.small svg {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #38365F;
+  border: 2px solid #ffffff;
+  padding: 4px;
+  box-sizing: border-box;
+} 
+.icon-button {
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  background: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
+
+.icon-button-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+}
+ 
+.tooltip-text {
+    visibility: hidden;
+    position: fixed;
+    top: 85%;
+    right: 20px; /* Distance from the right edge of the screen */
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 12px;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1000;
+}
+
+.icon-button-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.icon-button {
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+}
+ 
